@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FF4D00">
+<meta property="og:title" content="Otra Agencia — Contenido que sí convierte">
+<meta property="og:description" content="Contenido para PYMEs: grabación, edición, estrategia y resultados medibles.">
+<meta property="og:type" content="website">
 <title>Otra Agencia — Contenido que sí convierte</title>
 <meta name="description" content="Agencia de contenido digital para PYMEs. 10+ años de experiencia. Santiago, Chile.">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -178,6 +182,57 @@ footer{background:var(--black);border-top:0.5px solid rgba(255,255,255,0.05);pad
 .fl span{color:var(--orange);}
 .fc{font-size:0.72rem;font-weight:300;color:rgba(245,245,240,0.22);}
 .fe{font-size:0.78rem;color:rgba(245,245,240,0.3);}
+
+
+/* MEJORAS DE CONVERSIÓN */
+.popular{position:absolute;top:1rem;right:1rem;background:var(--orange);color:var(--black);font-size:0.65rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.55rem;}
+.fit-sec{background:var(--black);}
+.fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.06);margin-top:2rem;}
+.fit-card{background:rgba(26,26,26,0.8);padding:1.6rem;font-size:0.9rem;font-weight:300;line-height:1.7;border-bottom:2px solid transparent;}
+.fit-card:hover{border-bottom-color:var(--orange);}
+.cta-wrap{display:grid;grid-template-columns:1fr 0.9fr;gap:3rem;align-items:start;max-width:1120px;margin:0 auto;text-align:left;}
+.cta-copy h2{text-align:left;}
+.mini-dark{display:inline-block;background:rgba(15,15,15,0.12);color:var(--black);border:0.5px solid rgba(15,15,15,0.18);padding:0.35rem 0.8rem;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem;}
+.trust-row{display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:1.2rem;}
+.trust-row span{background:rgba(15,15,15,0.12);color:rgba(15,15,15,0.75);font-size:0.74rem;padding:0.45rem 0.7rem;}
+.lead-form{background:var(--black);padding:1.6rem;border:1px solid rgba(15,15,15,0.2);box-shadow:0 20px 60px rgba(0,0,0,0.25);display:grid;gap:0.9rem;}
+.lead-form label{font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(245,245,240,0.65);display:grid;gap:0.4rem;}
+.lead-form input,.lead-form select{width:100%;border:1px solid rgba(245,245,240,0.12);background:rgba(255,255,255,0.04);color:var(--bone);font-family:var(--fb);font-size:0.92rem;padding:0.9rem;outline:none;border-radius:0;}
+.lead-form input:focus,.lead-form select:focus{border-color:var(--orange);}
+.lead-form select option{background:var(--black);color:var(--bone);}
+.form-btn{width:100%;margin-top:0.2rem;background:var(--orange);color:var(--black);}
+.form-btn:hover{background:var(--ol);}
+.form-note{font-size:0.72rem!important;color:rgba(245,245,240,0.45)!important;line-height:1.5!important;margin:0!important;}
+
+@media (max-width: 900px){
+  nav{padding:0.9rem 1rem;gap:1rem;}
+  .nav-links{display:none;}
+  .nav-logo{font-size:1.25rem;}
+  .nav-cta{padding:0.55rem 0.85rem;font-size:0.75rem;}
+  .hero{grid-template-columns:1fr;min-height:auto;}
+  .hero-left{padding:6rem 1.2rem 2.5rem;}
+  .hero h1{font-size:clamp(4rem,18vw,6rem);}
+  .hero-right{min-height:440px;}
+  .hero-stats{grid-template-columns:repeat(2,1fr);gap:1rem;}
+  .stat{border-right:none;border-bottom:0.5px solid rgba(255,255,255,0.06);padding-bottom:0.9rem;}
+  section{padding:3.5rem 1.2rem;}
+  .marcas{padding:2.5rem 1.2rem;}
+  .marcas-row{display:grid;grid-template-columns:repeat(2,1fr);}
+  .marca-item{border-bottom:0.5px solid rgba(255,255,255,0.06);}
+  .about,.insight-grid,.cta-wrap{grid-template-columns:1fr;}
+  .about-content{padding:3rem 1.2rem;}
+  .cred-grid,.svc-grid,.proc-grid,.fit-grid{grid-template-columns:1fr;}
+  .caso-top{grid-template-columns:1fr;padding:1.5rem;}
+  .caso-big{text-align:left;}
+  .caso-nums{display:grid;grid-template-columns:repeat(2,1fr);}
+  .cnum{border-bottom:0.5px solid rgba(255,255,255,0.05);}
+  .caso-ins{margin:0 1.5rem 1.5rem;padding:1rem;}
+  .cta-sec{padding:3.5rem 1.2rem;}
+  .cta-copy h2{font-size:clamp(3rem,14vw,5rem);}
+  footer{padding:1.5rem 1.2rem;}
+  .wa{bottom:1rem;right:1rem;width:50px;height:50px;}
+}
+
 </style>
 </head>
 <body>
@@ -188,19 +243,20 @@ footer{background:var(--black);border-top:0.5px solid rgba(255,255,255,0.05);pad
     <li><a href="#casos">Casos reales</a></li>
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#contacto">Contacto</a></li>
   </ul>
-  <a class="nav-cta" href="https://wa.me/56945993844?text=Hola,%20quiero%20saber%20m%C3%A1s%20sobre%20Otra%20Agencia">Hablemos →</a>
+  <a class="nav-cta" href="#contacto">Diagnóstico gratis →</a>
 </nav>
 
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-tag">Agencia de contenido · Desde 2015 · Santiago, Chile</div>
+    <div class="hero-tag">Solo 3 cupos de diagnóstico este mes · Santiago, Chile</div>
     <h1>SOMOS<br><em>OTRA</em><br>AGENCIA.</h1>
-    <p class="hero-sub">Más de 10 años creando contenido que conecta, viraliza y convierte. Resultados reales en PYMEs reales.</p>
-    <p class="hero-proof">VIP Motors · 3 años · 1.3M views<br>Enlaces Colombia · 1 semana · 167K views</p>
+    <p class="hero-sub">Creamos videos para PYMEs que necesitan más alcance, más confianza y más clientes. Estrategia, grabación y edición con mentalidad de venta.</p>
+    <p class="hero-proof">+438K en TikTok · +130K en Instagram · VIP Motors 1.3M views · Enlaces Colombia 167K views en 7 días</p>
     <div class="hero-actions">
-      <a class="btn-p" href="#casos">Ver casos reales</a>
-      <a class="btn-g" href="https://wa.me/56945993844?text=Hola,%20quiero%20saber%20m%C3%A1s%20sobre%20Otra%20Agencia">Agendar llamada gratis</a>
+      <a class="btn-p" href="#contacto">Quiero mi diagnóstico gratis</a>
+      <a class="btn-g" href="#casos">Ver casos reales</a>
     </div>
     <div class="hero-stats">
       <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Años creando</div></div>
@@ -371,26 +427,60 @@ footer{background:var(--black);border-top:0.5px solid rgba(255,255,255,0.05);pad
   <p style="font-size:0.9rem;font-weight:300;color:var(--muted);max-width:480px;line-height:1.7;">Paquetes para PYMEs que quieren crecer en redes sin volverse locos.</p>
   <div class="svc-grid">
     <div class="svc"><span class="svc-n">01</span><div class="svc-t">Plan Edición</div><p class="svc-d">Tú grabas con tu celular, nosotros editamos, subtitulamos y publicamos. 10 videos al mes en TikTok e Instagram. Sin camerógrafo, máximo resultado.</p><div class="svc-p">$199.990 <span>CLP / 10 videos</span></div></div>
-    <div class="svc svc-ft"><span class="svc-n">02</span><div class="svc-t">Plan Completo</div><p class="svc-d">Vamos a tu negocio a grabar 2 veces al mes. 10 videos editados y publicados en TikTok, Instagram y YouTube. Incluye estrategia e informe mensual.</p><div class="svc-p">$299.990 <span>CLP / 10 videos</span></div></div>
+    <div class="svc svc-ft"><span class="popular">Más elegido</span><span class="svc-n">02</span><div class="svc-t">Plan Completo</div><p class="svc-d">Vamos a tu negocio a grabar 2 veces al mes. 10 videos editados y publicados en TikTok, Instagram y YouTube. Incluye estrategia e informe mensual.</p><div class="svc-p">$299.990 <span>CLP / 10 videos</span></div></div>
     <div class="svc"><span class="svc-n">03</span><div class="svc-t">Plan Agencia</div><p class="svc-d">Gestión total: 15 videos al mes, 3 a 4 jornadas de grabación, estrategia, publicación, informe y reunión mensual. El modelo VIP Motors.</p><div class="svc-p">$599.990 <span>CLP / 15 videos</span></div></div>
   </div>
 </section>
 
 <section id="proceso">
-  <div class="stag">Cómo trabajamos</div>
+  <div class="stag">Cómo trabajamos en 7 días</div>
   <div class="stit" style="font-family:var(--fd);font-size:clamp(2.2rem,4vw,3.2rem);line-height:1;margin-bottom:0;">Simple. Rápido. Medible.</div>
   <div class="proc-grid">
-    <div class="step"><div class="step-n">01</div><div class="step-t">Diagnóstico gratuito</div><p class="step-d">Revisamos tu negocio, audiencia y competencia. Te decimos qué está fallando y qué oportunidad estás perdiendo.</p></div>
-    <div class="step"><div class="step-n">02</div><div class="step-t">Estrategia</div><p class="step-d">Definimos formatos, frecuencia y mensajes que van a resonar con tus clientes en cada plataforma.</p></div>
-    <div class="step"><div class="step-n">03</div><div class="step-t">Producción</div><p class="step-d">Celular, buen audio y edición que engancha desde el segundo 1. Sin equipos caros.</p></div>
-    <div class="step"><div class="step-n">04</div><div class="step-t">Análisis y mejora</div><p class="step-d">Cada mes revisamos los números. Lo que funciona se amplifica. Lo que no, se cambia.</p></div>
+    <div class="step"><div class="step-n">01</div><div class="step-t">Día 1 · Diagnóstico</div><p class="step-d">Revisamos tu negocio, redes, competencia y oportunidad real. Te decimos qué está fallando y qué contenido puede vender más.</p></div>
+    <div class="step"><div class="step-n">02</div><div class="step-t">Día 2 · Guiones</div><p class="step-d">Armamos ideas simples, grabables y pensadas para retención: gancho, desarrollo, CTA y objeciones del cliente.</p></div>
+    <div class="step"><div class="step-n">03</div><div class="step-t">Día 3-4 · Grabación</div><p class="step-d">Vamos a tu negocio o te guiamos para grabar. Celular, buen audio y contenido real: menos pose, más confianza.</p></div>
+    <div class="step"><div class="step-n">04</div><div class="step-t">Día 5-7 · Edición y entrega</div><p class="step-d">Editamos, subtitulamos, dejamos captions sugeridos y medimos qué formatos tienen mejor potencial para repetir.</p></div>
+  </div>
+</section>
+
+<section class="fit-sec">
+  <div class="stag">Antes de trabajar juntos</div>
+  <div class="stit" style="font-family:var(--fd);font-size:clamp(2.2rem,4vw,3.2rem);line-height:1;margin-bottom:0.8rem;">Esto es para ti si...</div>
+  <div class="fit-grid">
+    <div class="fit-card">Tienes una PYME y sabes que tus redes no reflejan lo bueno que es tu negocio.</div>
+    <div class="fit-card">Quieres videos constantes sin contratar editor, community manager y productor por separado.</div>
+    <div class="fit-card">Prefieres contenido real, rápido y medible antes que campañas bonitas que nadie termina viendo.</div>
   </div>
 </section>
 
 <section class="cta-sec" id="contacto">
-  <h2>TU PYME PUEDE SER<br>EL PRÓXIMO CASO.</h2>
-  <p>Primera llamada gratis. Sin compromiso. Te mostramos exactamente qué haríamos con tu negocio — con números reales.</p>
-  <a class="btn-dk" href="https://wa.me/56945993844?text=Hola,%20quiero%20saber%20m%C3%A1s%20sobre%20Otra%20Agencia">Escribir por WhatsApp →</a>
+  <div class="cta-wrap">
+    <div class="cta-copy">
+      <div class="mini-dark">Diagnóstico gratuito · cupos limitados</div>
+      <h2>TU PYME PUEDE SER<br>EL PRÓXIMO CASO.</h2>
+      <p>Déjame tus datos y te respondo por WhatsApp con una propuesta inicial para tu negocio. Sin compromiso, sin chamullo y sin reunión eterna de Zoom.</p>
+      <div class="trust-row">
+        <span>✓ Respuesta por WhatsApp</span>
+        <span>✓ Revisión de tus redes</span>
+        <span>✓ Idea de contenido inicial</span>
+      </div>
+    </div>
+    <form class="lead-form" id="leadForm">
+      <label>Nombre<input id="leadName" name="name" placeholder="Ej: Vicente" required></label>
+      <label>WhatsApp<input id="leadPhone" name="phone" placeholder="Ej: +56 9 1234 5678" required></label>
+      <label>Tipo de negocio<input id="leadBiz" name="business" placeholder="Ej: Automotora, barbería, restaurante" required></label>
+      <label>¿Qué necesitas?
+        <select id="leadPlan" name="plan">
+          <option>Quiero editar videos que ya tengo</option>
+          <option>Quiero que graben y editen por mí</option>
+          <option>Quiero estrategia completa para redes</option>
+          <option>No sé, necesito orientación</option>
+        </select>
+      </label>
+      <button class="btn-dk form-btn" type="submit">Enviar diagnóstico por WhatsApp →</button>
+      <p class="form-note">Tus datos quedan solo para contactarte. Nada de spam, esto no es grupo de ofertas de tía.</p>
+    </form>
+  </div>
 </section>
 
 <a class="wa" href="https://wa.me/56945993844?text=Hola,%20quiero%20saber%20m%C3%A1s%20sobre%20Otra%20Agencia" target="_blank">
@@ -402,5 +492,39 @@ footer{background:var(--black);border-top:0.5px solid rgba(255,255,255,0.05);pad
   <div class="fe">contactovicentep@gmail.com · +56 9 4599 3844</div>
   <div class="fc">© 2026 Otra Agencia · Santiago, Chile</div>
 </footer>
+
+<script>
+(function(){
+  const form = document.getElementById('leadForm');
+  const phone = '56945993844';
+  const defaultMsg = 'Hola, quiero saber más sobre Otra Agencia';
+  document.querySelectorAll('a[href*="wa.me/56945993844"]').forEach(a=>{
+    if(!a.href.includes('text=')) a.href = `https://wa.me/${phone}?text=${encodeURIComponent(defaultMsg)}`;
+  });
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('leadName').value.trim();
+      const leadPhone = document.getElementById('leadPhone').value.trim();
+      const biz = document.getElementById('leadBiz').value.trim();
+      const plan = document.getElementById('leadPlan').value;
+      const lead = {name, phone: leadPhone, biz, plan, createdAt: new Date().toISOString()};
+      const leads = JSON.parse(localStorage.getItem('oa_leads') || '[]');
+      leads.push(lead);
+      localStorage.setItem('oa_leads', JSON.stringify(leads));
+      const msg = `Hola, soy ${name}. Quiero un diagnóstico para mi negocio.
+
+WhatsApp: ${leadPhone}
+Tipo de negocio: ${biz}
+Necesidad: ${plan}
+
+Vengo desde la web de Otra Agencia.`;
+      window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
+      form.reset();
+    });
+  }
+})();
+</script>
+
 </body>
 </html>
