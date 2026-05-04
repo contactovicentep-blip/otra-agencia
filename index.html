@@ -244,6 +244,46 @@ footer{background:rgba(10,3,0,0.95);border-top:0.5px solid rgba(255,255,255,0.05
   opacity:1;
   transform:translateY(0);
 }
+
+/* ===== POR QUÉ FUNCIONA ===== */
+.porq-sec{background:rgba(10,4,0,0.92);padding:6rem 3rem;}
+.porq-header{max-width:700px;margin:0 auto 3.5rem;text-align:center;}
+.porq-title{font-family:var(--fd);font-size:clamp(2.2rem,4.5vw,3.6rem);line-height:1;margin-bottom:1.2rem;}
+.porq-title em{color:var(--orange);font-style:normal;}
+.porq-intro{font-size:0.9rem;font-weight:300;color:var(--muted);line-height:1.9;margin-bottom:0;}
+
+/* Puntos clave */
+.porq-points{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:3rem;}
+@media(max-width:600px){.porq-points{grid-template-columns:1fr;}}
+.porq-point{display:flex;align-items:flex-start;gap:0.9rem;background:rgba(255,77,0,0.05);border:0.5px solid rgba(255,77,0,0.15);border-radius:10px;padding:1.1rem 1.2rem;transition:border-color 0.3s,background 0.3s;}
+.porq-point:hover{border-color:rgba(255,77,0,0.4);background:rgba(255,77,0,0.08);}
+.porq-point-icon{font-size:1.2rem;flex-shrink:0;margin-top:0.05rem;}
+.porq-point-text{font-size:0.86rem;font-weight:400;color:var(--bone);line-height:1.55;}
+.porq-point-text span{display:block;font-size:0.75rem;font-weight:300;color:var(--muted);margin-top:0.2rem;}
+
+/* Comparación */
+.porq-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:3rem;}
+@media(max-width:600px){.porq-compare{grid-template-columns:1fr;}}
+.compare-col{border-radius:12px;padding:1.8rem 1.6rem;}
+.compare-col.bad{background:rgba(255,255,255,0.03);border:0.5px solid rgba(255,255,255,0.08);}
+.compare-col.good{background:rgba(255,77,0,0.07);border:0.5px solid rgba(255,77,0,0.3);}
+.compare-label{font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1.2rem;display:flex;align-items:center;gap:0.5rem;}
+.compare-col.bad .compare-label{color:rgba(245,245,240,0.35);}
+.compare-col.good .compare-label{color:var(--orange);}
+.compare-label::before{content:'';width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.compare-col.bad .compare-label::before{background:rgba(255,255,255,0.2);}
+.compare-col.good .compare-label::before{background:var(--orange);}
+.compare-item{display:flex;align-items:center;gap:0.7rem;padding:0.55rem 0;border-bottom:0.5px solid rgba(255,255,255,0.05);font-size:0.84rem;font-weight:300;}
+.compare-item:last-child{border-bottom:none;}
+.compare-col.bad .compare-item{color:rgba(245,245,240,0.4);}
+.compare-col.good .compare-item{color:var(--bone);font-weight:400;}
+.compare-icon{font-size:0.85rem;flex-shrink:0;}
+
+/* Cierre */
+.porq-cierre{text-align:center;max-width:620px;margin:0 auto;}
+.porq-cierre-quote{font-family:var(--fd);font-size:clamp(1.4rem,3vw,2rem);color:var(--bone);line-height:1.2;margin-bottom:0.6rem;}
+.porq-cierre-quote em{color:var(--orange);font-style:normal;}
+.porq-cierre-sub{font-size:0.78rem;font-weight:300;color:var(--muted);letter-spacing:0.04em;}
 </style>
 </head>
 <body>
@@ -467,6 +507,74 @@ footer{background:rgba(10,3,0,0.95);border-top:0.5px solid rgba(255,255,255,0.05
 </section>
 
 <!-- SERVICIOS -->
+
+<!-- ===== POR QUÉ FUNCIONA ===== -->
+<section class="porq-sec">
+  <div class="porq-header">
+    <div class="stag" style="text-align:center;margin-bottom:0.8rem;">Por qué nuestro contenido sí funciona</div>
+    <div class="porq-title">No hacemos videos <em>bonitos.</em><br>Hacemos videos que <em>venden.</em></div>
+    <p class="porq-intro">
+      La mayoría de las agencias se enfocan en hacer contenido "perfecto".<br>
+      Pero en redes sociales, eso no es lo que funciona.<br>
+      Las plataformas comprimen la calidad, la gente no espera producción de cine…<br>
+      y lo que realmente importa es <strong style="color:var(--bone);">captar atención y generar acción.</strong>
+    </p>
+  </div>
+
+  <!-- Puntos clave -->
+  <div class="porq-points">
+    <div class="porq-point">
+      <div class="porq-point-icon">🎯</div>
+      <div class="porq-point-text">Contenido pensado para redes
+        <span>No para cine. Para TikTok, Instagram y YouTube.</span>
+      </div>
+    </div>
+    <div class="porq-point">
+      <div class="porq-point-icon">⚡</div>
+      <div class="porq-point-text">Edición rápida, directa y optimizada
+        <span>Velocidad sin sacrificar estrategia.</span>
+      </div>
+    </div>
+    <div class="porq-point">
+      <div class="porq-point-icon">📈</div>
+      <div class="porq-point-text">Volumen + estrategia por sobre perfección
+        <span>Más videos = más alcance = más resultados.</span>
+      </div>
+    </div>
+    <div class="porq-point">
+      <div class="porq-point-icon">💰</div>
+      <div class="porq-point-text">Enfoque en resultados concretos
+        <span>Mensajes, clientes, ventas. No solo views.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comparación visual -->
+  <div class="porq-compare">
+    <div class="compare-col bad">
+      <div class="compare-label">Contenido tradicional</div>
+      <div class="compare-item"><span class="compare-icon">🐌</span> Lento de producir</div>
+      <div class="compare-item"><span class="compare-icon">💸</span> Caro y con poco retorno</div>
+      <div class="compare-item"><span class="compare-icon">🎬</span> Sobre producido y artificial</div>
+      <div class="compare-item"><span class="compare-icon">📉</span> Poca frecuencia de publicación</div>
+      <div class="compare-item"><span class="compare-icon">😐</span> Parece publicidad, genera rechazo</div>
+    </div>
+    <div class="compare-col good">
+      <div class="compare-label">Nuestro enfoque</div>
+      <div class="compare-item"><span class="compare-icon">🚀</span> Rápido y eficiente</div>
+      <div class="compare-item"><span class="compare-icon">🧠</span> Estratégico y con foco en ROI</div>
+      <div class="compare-item"><span class="compare-icon">📱</span> Optimizado para el algoritmo</div>
+      <div class="compare-item"><span class="compare-icon">🔥</span> Alto volumen con resultados reales</div>
+      <div class="compare-item"><span class="compare-icon">🤝</span> Se ve auténtico, genera confianza</div>
+    </div>
+  </div>
+
+  <!-- Cierre -->
+  <div class="porq-cierre">
+    <div class="porq-cierre-quote">"En redes, el que vende no es el más bonito…<br>es el que mejor <em>comunica.</em>"</div>
+    <div class="porq-cierre-sub">— El principio detrás de cada video que hacemos</div>
+  </div>
+</section>
 <section class="serv-sec" id="servicios">
   <div class="stag">Lo que hacemos</div>
   <div class="stit" style="font-family:var(--fd);font-size:clamp(2.2rem,4vw,3.2rem);line-height:1;margin-bottom:0.8rem;">Servicios</div>
